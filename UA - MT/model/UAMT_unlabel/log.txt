@@ -1,0 +1,7 @@
+[17:17:00.300] Namespace(root_path='../data/2018LA_Seg_Training Set/', exp='UAMT_unlabel', max_iterations=6000, batch_size=4, labeled_bs=2, base_lr=0.01, deterministic=1, seed=1337, gpu='0', ema_decay=0.99, consistency_type='mse', consistency=0.1, consistency_rampup=40.0)
+[17:17:00.613] 8 itertations per epoch
+[17:17:02.450] iteration 1 : loss : 0.642443 cons_dist: 0.200542, loss_weight: 0.000674
+[17:17:02.930] iteration 2 : loss : 0.661906 cons_dist: 0.038006, loss_weight: 0.000674
+[17:17:03.407] iteration 3 : loss : 0.586215 cons_dist: 0.013669, loss_weight: 0.000674
+[17:17:03.885] iteration 4 : loss : 0.549745 cons_dist: 0.017808, loss_weight: 0.000674
+[17:17:04.362] iteration 5 : loss : 0.551488 cons_dist: 0.024290, loss_weight: 0.000674

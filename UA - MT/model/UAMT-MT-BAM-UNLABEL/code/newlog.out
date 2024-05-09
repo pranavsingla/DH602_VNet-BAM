@@ -1,0 +1,41 @@
+Namespace(root_path='../data/2018LA_Seg_Training Set/', exp='UAMT-BAM', max_iterations=6000, batch_size=4, base_lr=0.01, deterministic=1, seed=1337, gpu='0')
+total 16 samples
+total 20 samples
+4 itertations per epoch
+  0%|                                        | 0/1501 [00:00<?, ?it/s]  0%|                                        | 0/1501 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/healthcrafters/healthcrafters/UA-MT/code/train_LA.py", line 106, in <module>
+    outputs = net(volume_batch)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/code/networks/vnet.py", line 239, in forward
+    out = self.decoder(features)
+  File "/home/healthcrafters/healthcrafters/UA-MT/code/networks/vnet.py", line 227, in decoder
+    x8_up = x8_up + self.bam_1(x1)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/code/networks/modified_bam.py", line 49, in forward
+    att = 1 + F.sigmoid( self.channel_att(in_tensor) * self.spatial_att(in_tensor) )
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/code/networks/modified_bam.py", line 25, in forward
+    return self.gate_c( avg_pool ).unsqueeze(2).unsqueeze(3).unsqueeze(4).expand_as(in_tensor)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/healthcrafters/healthcrafters/UA-MT/healthcrafters/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (4x16 and 32x2)

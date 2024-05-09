@@ -1,0 +1,2 @@
+[00:57:36.658] Namespace(root_path='../data/2018LA_Seg_Training Set/', exp='UAMT-BAM', max_iterations=6000, batch_size=4, base_lr=0.01, deterministic=1, seed=1337, gpu='0')
+[00:57:36.899] 4 itertations per epoch
