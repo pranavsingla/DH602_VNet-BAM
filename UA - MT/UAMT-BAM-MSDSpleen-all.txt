@@ -1,0 +1,2 @@
+usage: test_LA.py [-h] [--root_path ROOT_PATH] [--model MODEL] [--gpu GPU]
+test_LA.py: error: unrecognized arguments: --exp=̌UAMT-BAM-MSDSpleen-all
