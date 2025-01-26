@@ -1,0 +1,15 @@
+# Ignore compressed files
+**.zip
+**.tar
+
+# Ignore directories in the root
+Task09_Spleen/
+Testing Set/
+Training Set/
+
+# Ignore nested directories
+DH602_VNet-BAM/dataset/MSD-spleen/Task*/
+DH602_VNet-BAM/UA - MT/data/2018LA_Seg_Training Set/
+._Task09_Spleen
+
+
