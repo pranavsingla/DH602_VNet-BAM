@@ -1,0 +1,16 @@
+Namespace(root_path='../data/2018LA_Seg_Training Set/', exp='UAMT-BAM-supervised-1', max_iterations=6000, batch_size=4, base_lr=0.01, deterministic=1, seed=1337, gpu='0')
+total 16 samples
+total 20 samples
+4 itertations per epoch
+  0%|                                        | 0/1501 [00:00<?, ?it/s]  0%|                                        | 0/1501 [00:01<?, ?it/s]
+torch.Size([4, 2, 112, 112, 80]) torch.Size([4, 112, 112, 80])
+Traceback (most recent call last):
+  File "/home/pranav/DH602_VNet-BAM/UA - MT/code/train_LA.py", line 117, in <module>
+    loss.backward()
+  File "/home/pranav/DH602_VNet-BAM/UA - MT/env/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/pranav/DH602_VNet-BAM/UA - MT/env/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/pranav/DH602_VNet-BAM/UA - MT/env/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 246.00 MiB. GPU 

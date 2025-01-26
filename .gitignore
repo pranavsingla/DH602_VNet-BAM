@@ -1,0 +1,16 @@
+
+# Ignore nested directories
+dataset/MSD-spleen/Task*/
+dataset/MSD-spleen/pp*/
+
+UA - MT/data/2018LA_Seg_Training Set/
+._Task09_Spleen
+model/
+UA - MT/env/
+
+
+# Ignore compressed files
+**.zip
+**.tar
+**.pth
+
